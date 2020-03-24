@@ -1,0 +1,30 @@
+﻿<html>
+
+<head>
+<title>HTML Table 表格</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="HTML 網頁設計不可或缺的元素就是表格（Table），通常表格用來做版面的排版，而表格的用法包含了幾個重要的標籤，分別是 table、tr 與 td 這幾個重點，組合起來才是">
+<meta name="keywords" content="HTML,Table,表格">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>HTML Table 表格</h1>
+
+		<div id='content'>HTML 網頁設計不可或缺的元素就是表格（Table），通常表格用來做版面的排版，而表格的用法包含了幾個重要的標籤，分別是 table、tr 與 td 這幾個重點，組合起來才是個完整的表格，以下做個簡單的表格範例。
+		
+		<div id="CodeBox">&lt;table border="1"&gt;<br>　&lt;tr&gt;<br>　&lt;td&gt;這裡可以放表格內容&lt;/td&gt;<br>　&lt;/tr&gt;<br>&lt;/table&gt;<br></div>呈現結果如下<br><table border="1"><tbody><tr><td>這裡可以放表格內容</td></tr></tbody></table><br>範例中使用了&lt;table&gt; 與 &lt;/table&gt; 的標籤把內容包起來，&lt;tr&gt;&lt;/tr&gt; 標籤代表的是一行，而 &lt;td&gt;&lt;/td&gt; 標籤則代表一列，為了清楚呈現，我們還為 table 加上了 border="1" 的設定，這代表這個 table 的邊框粗細是 1，在實際使用上你也可以設定為其它的値，例如 border="0" 則不會顯示邊框。請注意 HTML 語法都必須用一個開始標籤與一個結束標籤把內容包起來，開始標籤與結束標籤是對等的，缺一不可。<br><br>除了可以寫一個單純的表格之外，我們還可以設定 table 的寬度、高度或邊框樣式，要做這些設定，你必須先了解幾個能夠控制表格的元素，例如 width、border、background ... 等。<br><ul><li>width：控制 table 的寬度</li><li>border：控制 table 邊框的粗細</li><li>background：控制背景圖片</li><li>colspan：控制儲存格橫跨幾個欄位</li><li>rowspan：控制儲存格垂直跨幾個欄位<br></li></ul>接著我們寫幾個範例<br><br>兩個欄位的 table 表格範例<br><div id="CodeBox">&lt;table width="300" border="1"&gt;<br>　&lt;tr&gt;<br>　&lt;td&gt;這裡是第一個欄位&lt;/td&gt;<br>　&lt;td&gt;這裡是第二個欄位&lt;/td&gt;<br>　&lt;/tr&gt;<br>&lt;/table&gt;<br></div>呈現結果如下<br><table width="300" border="1"><tbody><tr><td>這裡是第一個欄位</td><td>這裡是第二個欄位</td></tr></tbody></table><br><br>兩行兩欄位的 Table 表格範例
+		
+		<div id="CodeBox">&lt;table border="1"&gt;<br>　&lt;tr&gt;<br>　&lt;td&gt;這裡是第一行的第一個欄位&lt;/td&gt;<br>　&lt;td&gt;這裡是第一行的第二個欄位&lt;/td&gt;<br>　&lt;/tr&gt;<br>　&lt;tr&gt;<br>　&lt;td&gt;這裡是第二行的第一個欄位&lt;/td&gt;<br>　&lt;td&gt;這裡是第二行的第二個欄位&lt;/td&gt;<br>　&lt;/tr&gt;<br>&lt;/table&gt;<br></div>呈現結果如下<br><table border="1"><tbody><tr><td>這裡是第一行的第一個欄位</td><td>這裡是第一行的第二個欄位</td></tr><tr><td>這裡是第二行的第一個欄位</td><td>這裡是第二行的第二個欄位</td></tr></tbody></table><br>接著我們把第一行變成一個欄位
+		
+		<div id="CodeBox">&lt;table border="1"&gt;<br>　&lt;tr&gt;<br>　&lt;td colspan="2"&gt;這裡是第一行&lt;/td&gt;<br>　&lt;/tr&gt;<br>　&lt;tr&gt;<br>　&lt;td&gt;這裡是第二行的第一個欄位&lt;/td&gt;<br>　&lt;td&gt;這裡是第二行的第二個欄位&lt;/td&gt;<br>　&lt;/tr&gt;<br>&lt;/table&gt;<br></div>呈現結果如下<br><table border="1"><tbody><tr><td colspan="2">這裡是第一行</td></tr><tr><td>這裡是第二行的第一個欄位</td><td>這裡是第二行的第二個欄位</td></tr></tbody></table><br>最後做一個兩欄位的 Table，第一個欄位 rowspan="2"，第二個欄位有兩行
+		
+		<div id="CodeBox">&lt;table border="1"&gt;<br>　&lt;tr&gt;<br>　&lt;td rowspan="2"&gt;這是第一個欄位&lt;/td&gt;<br>　&lt;td&gt;這裡是第二個欄位第一行&lt;/td&gt;<br>　&lt;/tr&gt;<br>　&lt;tr&gt;<br>　&lt;td&gt;這裡是第二個欄位第二行&lt;/td&gt;<br>　&lt;/tr&gt;<br>&lt;/table&gt;</div>呈現結果<table border="1"><tr><td rowspan="2">這是第一個欄位</td><td>這裡是第二個欄位第一行</td></tr><tr><td>這裡是第二個欄位第二行</td></tr></table>
+		
+		<p>&nbsp;</p>
+		
+		</div>	
+
+</body>
+</html>
